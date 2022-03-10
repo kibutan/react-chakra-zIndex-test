@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   ChakraProvider,
   Stack,
@@ -18,18 +18,12 @@ import {
   Icon,
   Image,
   Box
-} from '@chakra-ui/react'
-import { EmailIcon } from '@chakra-ui/icons'
+} from "@chakra-ui/react";
+import { EmailIcon } from "@chakra-ui/icons";
 
 const App = () => (
   <ChakraProvider resetCSS>
-    <Box
-      display="flex"
-      width="1000px"
-      height="1000px"
-      justifyContent="center"
-      alignItems="center"
-    >
+    <Box display="flex" width="1000px" height="1000px">
       <Image
         height="250px"
         width="250px"
@@ -52,7 +46,40 @@ const App = () => (
         zIndex="docked"
       />
     </Box>
+    <Box
+      display="flex"
+      width="1000px"
+      height="1000px"
+      justifyContent="center"
+      alignItems="center"
+      pos="relative"
+    >
+      <Image
+        pos="absolute"
+        height="250px"
+        width="250px"
+        src="https://via.placeholder.com/600/92c952"
+        htmlHeight={600}
+        htmlWidth={600}
+        overflow="visible"
+        display="flex"
+        flexDirection="row"
+        justifyContent="center"
+        alignItems="center"
+        zIndex="docked"
+      />
+      <Image
+        pos="absolute"
+        height="100px"
+        width="100px"
+        top="525px"
+        left="375px"
+        src="https://via.placeholder.com/150/771796"
+        display="block"
+        zIndex="docked"
+      />
+    </Box>
   </ChakraProvider>
-)
+);
 
-export default App
+export default App;
